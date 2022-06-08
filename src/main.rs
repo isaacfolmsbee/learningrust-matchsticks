@@ -12,7 +12,10 @@ fn main() {
             .read_line(&mut max_matches)
             .expect("Failed to read line");
 
-        let max_matches: u32 = max_matches.trim().parse().expect("You must enter a number!");
+        let max_matches: u32 = max_matches
+            .trim()
+            .parse()
+            .expect("You must enter a number!");
 
         if max_matches >= 10 {
             break max_matches;
